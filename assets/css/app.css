@@ -1,0 +1,197 @@
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body { 
+    font-family: 'Stoke', serif;
+}
+
+
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+
+.banner { }
+
+.brand {
+    height: 150px; 
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    line-height: 150px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Playfair Display SC', serif;
+}
+
+#city-top {
+    background-image: url('../img/city-top.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 500px;
+}
+
+#city-bottom {
+    background-image: url('../img/city-bottom.png');
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: 500px;
+}
+
+.caption-absolute {
+    position: absolute;
+    z-index: 10;
+    right: 50px;
+    bottom: 50px;
+    background-color: black;
+    padding: 20px;
+    font-size: 30px;
+    opacity: 0.75;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.caption-relative {
+    position: relative;
+    z-index: 10;    
+}
+
+.nav a {
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 115%;
+    border: 1px solid #636363;
+}
+
+.nav li {
+    background-color: #404040;
+    background-image: url('../img/static.png');
+    border: 1px solid black;
+}
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.content {
+    padding: 0 20px;
+}
+
+.container {
+    background-color: black;
+    color: white;
+}
+
+.white {
+    background-color: transparent;
+    background-image: url('../img/10_percent_black.png');
+}
+
+.white {
+    color: black;
+}
+
+a {
+    color: white;
+}
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+.main { }
+
+
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.sidebar { }
+
+
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.page-header {
+    border-bottom: 1px solid black;
+    margin: 30px 0 30px 0;
+}
+
+.hentry header { }
+.hentry time { }
+.hentry .byline { }
+.hentry .entry-content { }
+.hentry footer { }
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.content-info { }
+
+footer {
+    background-color: #606060; 
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+#contact-information {
+    padding: 40px;
+}
+
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 767px) {
+
+}
+
+
+
+@font-face {
+    font-family: 'Stoke';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Stoke Regular'), local('Stoke-Regular'), url(http://themes.googleusercontent.com/static/fonts/stoke/v3/mcAVGFXhrm6QD4jAEx84ng.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Metrophobic';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Metrophobic'), url(http://themes.googleusercontent.com/static/fonts/metrophobic/v3/0IZPA9DbzKXnGZABsAivT4bN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/toadOcfmlt9b38dHJxOBGJ6-ys_j0H4QL65VLqzI3wI.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Playfair Display SC Bold'), local('PlayfairDisplaySC-Bold'), url(http://themes.googleusercontent.com/static/fonts/playfairdisplaysc/v1/5ggqGkvWJU_TtW2W8cEubMP2KmjfUHYbcL2S5kCcZ9E.woff) format('woff');
+}
