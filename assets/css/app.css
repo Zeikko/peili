@@ -56,17 +56,26 @@ body {
     z-index: 10;    
 }
 
+.nav {
+    background-image: url('../img/static.png');
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 30px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 30px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 30px rgba(50, 50, 50, 0.75);
+}
+
 .nav a {
     font-family: 'Metrophobic', sans-serif;
     font-size: 115%;
-    border: 1px solid #636363;
+    /*border: 1px solid #636363;*/
+
 }
 
-.nav li {
+/*.nav li {
     background-color: #404040;
-    background-image: url('../img/static.png');
+    
     border: 1px solid black;
-}
+}*/
 
 /* ==========================================================================
    Content
@@ -190,8 +199,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @font-face {
-  font-family: 'Playfair Display SC';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Playfair Display SC Bold'), local('PlayfairDisplaySC-Bold'), url(http://themes.googleusercontent.com/static/fonts/playfairdisplaysc/v1/5ggqGkvWJU_TtW2W8cEubMP2KmjfUHYbcL2S5kCcZ9E.woff) format('woff');
+    font-family: 'Playfair Display SC';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Playfair Display SC Bold'), local('PlayfairDisplaySC-Bold'), url(http://themes.googleusercontent.com/static/fonts/playfairdisplaysc/v1/5ggqGkvWJU_TtW2W8cEubMP2KmjfUHYbcL2S5kCcZ9E.woff) format('woff');
 }
