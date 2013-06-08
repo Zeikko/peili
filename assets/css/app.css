@@ -15,14 +15,14 @@ body {
 .banner { }
 
 .brand {
-    height: 150px; 
     text-align: center;
     width: 100%;
     font-size: 50px;
-    line-height: 150px;
+    line-height: 100px;
     color: white;
     text-transform: uppercase;
     font-family: 'Playfair Display SC', serif;
+    margin-bottom: 0;
 }
 
 #city-top {
@@ -42,7 +42,7 @@ body {
 .caption-absolute {
     position: absolute;
     z-index: 10;
-    right: 50px;
+    right: 0;
     bottom: 50px;
     background-color: black;
     padding: 20px;
@@ -67,15 +67,11 @@ body {
 .nav a {
     font-family: 'Metrophobic', sans-serif;
     font-size: 115%;
-    /*border: 1px solid #636363;*/
-
 }
 
-/*.nav li {
-    background-color: #404040;
-    
-    border: 1px solid black;
-}*/
+.navbar .nav > li > a {
+    color: #BBB;
+}
 
 /* ==========================================================================
    Content
@@ -152,6 +148,35 @@ footer {
     padding: 40px;
 }
 
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+.wpcf7-form .control-group p {
+    line-height: 1px;
+    margin: 0;
+}
+
+.card {
+    background-image: url('../img/postikortti.png');
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 447px;
+}
+
+.card-form {
+    position: relative;
+    top: 100px;
+    left: 330px;
+}
+
+.control-group {
+    margin-bottom: 0;
+}
+
+span.wpcf7-not-valid-tip {
+    
+}
 
 /* ==========================================================================
    WordPress Generated Classes
@@ -171,11 +196,39 @@ h1, h2, h3, h4, h5, h6 {
    Media Queries
    ========================================================================== */
 
-@media (max-width: 767px) {
+@media (max-width: 979px) {
+    .nav-collapse .nav > li {
+        float: none;
+    }
 
+    .brand {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .caption-absolute {
+        font-size: 20px;
+        padding: 15px;
+        bottom: 20px;
+    }
 }
 
+@media (max-width: 500px) {
+    .brand {
+        font-size: 20px;
+        line-height: 35px;
+    }
 
+    .caption-absolute {
+        font-size: 15px;
+        padding: 10px;
+        bottom: 5px;
+    }
+
+    .bx-next, .bx-prev {
+        display: none;
+    }
+}
 
 @font-face {
     font-family: 'Stoke';
@@ -204,3 +257,4 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     src: local('Playfair Display SC Bold'), local('PlayfairDisplaySC-Bold'), url(http://themes.googleusercontent.com/static/fonts/playfairdisplaysc/v1/5ggqGkvWJU_TtW2W8cEubMP2KmjfUHYbcL2S5kCcZ9E.woff) format('woff');
 }
+
