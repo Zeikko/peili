@@ -98,6 +98,10 @@ a {
     color: white;
 }
 
+.add-bottom {
+    margin-bottom: 80px;
+}
+
 /* ==========================================================================
    Primary Content
    ========================================================================== */
@@ -167,8 +171,27 @@ div.wpcf7 {
     margin: 0 auto;
 }
 
-span.wpcf7-not-valid-tip {
+span.wpcf7-not-valid-tip, div.wpcf7-validation-errors {
+    width: auto;
+    display: inline-block;
+    padding: 6px;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 14px;
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #b94a48;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+}
 
+div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
+    width: 560px;
+    margin: 20px 0 20px 11px;
 }
 
 /* ==========================================================================
@@ -270,15 +293,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @font-face {
-  font-family: 'IM Fell English';
-  font-style: normal;
-  font-weight: 400;
-  src: local('IM FELL English Roman'), local('IM_FELL_English_Roman'), url(http://themes.googleusercontent.com/static/fonts/imfellenglish/v3/xwIisCqGFi8pff-oa9uSVMyhYfqH3mbn79-t0w0Xep4.woff) format('woff');
+    font-family: 'IM Fell English';
+    font-style: normal;
+    font-weight: 400;
+    src: local('IM FELL English Roman'), local('IM_FELL_English_Roman'), url(http://themes.googleusercontent.com/static/fonts/imfellenglish/v3/xwIisCqGFi8pff-oa9uSVMyhYfqH3mbn79-t0w0Xep4.woff) format('woff');
 }
 
 @font-face {
-  font-family: 'Norican';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Norican Regular'), local('Norican-Regular'), url(http://themes.googleusercontent.com/static/fonts/norican/v1/WG5BKl7e-3DIN75Tz4bREg.woff) format('woff');
+    font-family: 'Norican';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Norican Regular'), local('Norican-Regular'), url(http://themes.googleusercontent.com/static/fonts/norican/v1/WG5BKl7e-3DIN75Tz4bREg.woff) format('woff');
 }
