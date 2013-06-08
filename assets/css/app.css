@@ -157,25 +157,17 @@ footer {
     margin: 0;
 }
 
-.card {
-    background-image: url('../img/postikortti.png');
-    background-repeat: no-repeat;
-    width: 600px;
-    height: 447px;
-}
-
-.card-form {
-    position: relative;
-    top: 100px;
-    left: 330px;
-}
-
 .control-group {
     margin-bottom: 0;
 }
 
+div.wpcf7 {
+    width: 600px;
+    margin: 0 auto;
+}
+
 span.wpcf7-not-valid-tip {
-    
+
 }
 
 /* ==========================================================================
@@ -195,6 +187,31 @@ h1, h2, h3, h4, h5, h6 {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+
+@media (min-width: 770px) {
+    .card {
+        background-image: url('../img/postikortti.png');
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 447px;
+    }
+
+    .card-form {
+        left: 50px;
+        top: 100px;
+    }
+
+    .card-text {
+        left: 30px;
+        top: 50px;
+    }
+
+    .card-form, .card-text {
+        position: relative;
+        float: left;
+        width: 275px;
+    }
+}
 
 @media (max-width: 979px) {
     .nav-collapse .nav > li {
