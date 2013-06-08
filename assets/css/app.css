@@ -17,11 +17,10 @@ body {
 .brand {
     text-align: center;
     width: 100%;
-    font-size: 50px;
+    font-size: 60px;
     line-height: 100px;
     color: white;
-    text-transform: uppercase;
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'IM Fell English', serif;
     margin-bottom: 0;
 }
 
@@ -151,7 +150,9 @@ footer {
 /* ==========================================================================
    Forms
    ========================================================================== */
-
+.contact-title {
+    font-family: 'Norican';
+}
 .wpcf7-form .control-group p {
     line-height: 1px;
     margin: 0;
@@ -219,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .brand {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 50px;
     }
 
@@ -269,9 +270,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @font-face {
-    font-family: 'Playfair Display SC';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Playfair Display SC Bold'), local('PlayfairDisplaySC-Bold'), url(http://themes.googleusercontent.com/static/fonts/playfairdisplaysc/v1/5ggqGkvWJU_TtW2W8cEubMP2KmjfUHYbcL2S5kCcZ9E.woff) format('woff');
+  font-family: 'IM Fell English';
+  font-style: normal;
+  font-weight: 400;
+  src: local('IM FELL English Roman'), local('IM_FELL_English_Roman'), url(http://themes.googleusercontent.com/static/fonts/imfellenglish/v3/xwIisCqGFi8pff-oa9uSVMyhYfqH3mbn79-t0w0Xep4.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'Norican';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Norican Regular'), local('Norican-Regular'), url(http://themes.googleusercontent.com/static/fonts/norican/v1/WG5BKl7e-3DIN75Tz4bREg.woff) format('woff');
+}
