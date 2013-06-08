@@ -72,6 +72,10 @@ body {
     color: #BBB;
 }
 
+.container {
+    overflow:hidden;
+}
+
 /* ==========================================================================
    Content
    ========================================================================== */
@@ -211,6 +215,11 @@ h1, h2, h3, h4, h5, h6 {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+@media (min-width: 980px) {
+    .navbar .nav > li:nth-child(1) {
+        margin-left: 77px;
+    }
+}
 
 @media (min-width: 770px) {
     .card {
@@ -238,8 +247,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 979px) {
-    .nav-collapse .nav > li {
-        float: none;
+
+    .navbar .nav > li > a {
+        padding: 10px 10px 10px;
     }
 
     .brand {
@@ -253,8 +263,15 @@ h1, h2, h3, h4, h5, h6 {
         bottom: 20px;
     }
 }
+@media (max-width: 768px) {
+    .nav-collapse .nav > li {
+        float: none;
+    }
+}
 
 @media (max-width: 500px) {
+
+
     .brand {
         font-size: 20px;
         line-height: 35px;

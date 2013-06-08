@@ -32,7 +32,7 @@
                     </aside><!-- /.sidebar -->
                 <?php endif; ?>
             </div>
-            <img src="/assets/img/arrow.jpg" alt="arrow" />
+            <img src="/assets/img/arrow.png" alt="arrow" />
         </div><!-- /.wrap -->
     </div>
     <?php get_template_part('templates/footer'); ?>
