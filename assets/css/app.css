@@ -153,6 +153,11 @@ footer {
 
 #contact-information {
     padding: 40px;
+    font-size: 120%;
+}
+
+#contact-information h3 {
+    font-size: 170%;
 }
 
 /* ==========================================================================
