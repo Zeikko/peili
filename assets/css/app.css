@@ -15,14 +15,13 @@ body {
 .banner { }
 
 .brand {
-    height: 150px; 
     text-align: center;
     width: 100%;
-    font-size: 50px;
-    line-height: 150px;
+    font-size: 60px;
+    line-height: 100px;
     color: white;
-    text-transform: uppercase;
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'IM Fell English', serif;
+    margin-bottom: 0;
 }
 
 #city-top {
@@ -42,7 +41,7 @@ body {
 .caption-absolute {
     position: absolute;
     z-index: 10;
-    right: 50px;
+    right: 0px;
     bottom: 50px;
     background-color: black;
     padding: 20px;
@@ -67,15 +66,15 @@ body {
 .nav a {
     font-family: 'Metrophobic', sans-serif;
     font-size: 115%;
-    /*border: 1px solid #636363;*/
-
 }
 
-/*.nav li {
-    background-color: #404040;
-    
-    border: 1px solid black;
-}*/
+.navbar .nav > li > a {
+    color: #BBB;
+}
+
+.container {
+    overflow:hidden;
+}
 
 /* ==========================================================================
    Content
@@ -103,32 +102,17 @@ a {
     color: white;
 }
 
+.add-bottom {
+    margin-bottom: 80px;
+}
+
 /* ==========================================================================
    Primary Content
    ========================================================================== */
 
 .main { }
 
-.contact-details {
-    background-image: url('../img/kkpohja.png');
-    width: 525px;
-    height: 300px;
-    color: white;
-    font-size: 80%;
-    margin-bottom: 50px;
-}
 
-.contact-details .information {
-    position: relative;
-    top: 87px;
-    left: 280px;
-}
-
-.contact-details h3 {
-    color: #ffff00;
-    margin: 0;
-    text-transform: uppercase;
-}
 
 /* ==========================================================================
    Sidebar
@@ -169,8 +153,55 @@ footer {
 
 #contact-information {
     padding: 40px;
+    font-size: 120%;
 }
 
+#contact-information h3 {
+    font-size: 170%;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+.contact-title {
+    font-family: 'Norican';
+}
+.wpcf7-form .control-group p {
+    line-height: 1px;
+    margin: 0;
+}
+
+.control-group {
+    margin-bottom: 0;
+}
+
+div.wpcf7 {
+    width: 600px;
+    margin: 0 auto;
+}
+
+span.wpcf7-not-valid-tip, div.wpcf7-validation-errors {
+    width: auto;
+    display: inline-block;
+    padding: 6px;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 14px;
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #b94a48;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+}
+
+div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
+    width: 560px;
+    margin: 20px 0 20px 11px;
+}
 
 /* ==========================================================================
    WordPress Generated Classes
@@ -189,12 +220,78 @@ h1, h2, h3, h4, h5, h6 {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
-@media (max-width: 767px) {
-
+@media (min-width: 980px) {
+    .navbar .nav > li:nth-child(1) {
+        margin-left: 77px;
+    }
 }
 
+@media (min-width: 770px) {
+    .card {
+        background-image: url('../img/postikortti.png');
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 447px;
+    }
 
+    .card-form {
+        left: 50px;
+        top: 100px;
+    }
+
+    .card-text {
+        left: 30px;
+        top: 50px;
+    }
+
+    .card-form, .card-text {
+        position: relative;
+        float: left;
+        width: 275px;
+    }
+}
+
+@media (max-width: 979px) {
+
+    .navbar .nav > li > a {
+        padding: 10px 10px 10px;
+    }
+
+    .brand {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .caption-absolute {
+        font-size: 20px;
+        padding: 15px;
+        bottom: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .nav-collapse .nav > li {
+        float: none;
+    }
+}
+
+@media (max-width: 500px) {
+
+
+    .brand {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .caption-absolute {
+        font-size: 15px;
+        padding: 10px;
+        bottom: 5px;
+    }
+
+    .bx-next, .bx-prev {
+        display: none;
+    }
+}
 
 @font-face {
     font-family: 'Stoke';
@@ -218,8 +315,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @font-face {
-    font-family: 'Playfair Display SC';
+    font-family: 'IM Fell English';
     font-style: normal;
-    font-weight: 700;
-    src: local('Playfair Display SC Bold'), local('PlayfairDisplaySC-Bold'), url(http://themes.googleusercontent.com/static/fonts/playfairdisplaysc/v1/5ggqGkvWJU_TtW2W8cEubMP2KmjfUHYbcL2S5kCcZ9E.woff) format('woff');
+    font-weight: 400;
+    src: local('IM FELL English Roman'), local('IM_FELL_English_Roman'), url(http://themes.googleusercontent.com/static/fonts/imfellenglish/v3/xwIisCqGFi8pff-oa9uSVMyhYfqH3mbn79-t0w0Xep4.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Norican';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Norican Regular'), local('Norican-Regular'), url(http://themes.googleusercontent.com/static/fonts/norican/v1/WG5BKl7e-3DIN75Tz4bREg.woff) format('woff');
 }

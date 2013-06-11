@@ -14,19 +14,25 @@
     ?>
     <div id="city-bottom">
         <div class="wrap container white" role="document">
-            <div class="row">
-                <div class="main <?php echo roots_main_class(); ?>" role="main">
+            <div class="row add-bottom">
+                <div class="span1">
+                    &nbsp;
+                </div>
+                <div class="main span10" role="main">
                     <div class="content clearfix">
                         <?php include roots_template_path(); ?>
                     </div>
                 </div><!-- /.main -->
+                <div class="span1">
+                    &nbsp;
+                </div>
                 <?php if (roots_display_sidebar()) : ?>
                     <aside class="sidebar <?php echo roots_sidebar_class(); ?>" role="complementary">
                         <?php include roots_sidebar_path(); ?>
                     </aside><!-- /.sidebar -->
                 <?php endif; ?>
             </div>
-            <img src="/assets/img/arrow.jpg" alt="arrow" />
+            <img src="/assets/img/arrow.png" alt="arrow" />
         </div><!-- /.wrap -->
     </div>
     <?php get_template_part('templates/footer'); ?>
