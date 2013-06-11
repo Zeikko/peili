@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Roots includes
  */
@@ -14,3 +15,29 @@ require_once locate_template('/lib/rewrites.php');        // URL rewriting for a
 require_once locate_template('/lib/widgets.php');         // Sidebars and widgets
 require_once locate_template('/lib/scripts.php');         // Scripts and stylesheets
 require_once locate_template('/lib/custom.php');          // Custom functions
+
+function contact_details_func($atts) {
+    extract(shortcode_atts(array(
+        'name' => null,
+        'title' => null,
+        'email' => null,
+        'phone' => null,
+                    ), $atts));
+
+    $html = '
+            <div class="contact-details" itemscope itemtype=\"Person\"> 
+            <div class="information">
+                <h3 itemprop="name">' . $name . '</h3>
+                <div itemprop="jobTitle">' . $title . '</div>
+                <div itemprop="email">' . $email . '</div>';
+    if ($phone)
+        $html .= '
+                <div itemprop="telephone">' . $phone . '</div>';
+    $html .= '
+        <div>www.peili-markkinointi.fi</div>
+        </div>
+    </div>';
+    return $html    ;
+}
+
+add_shortcode('contact_details', 'contact_details_func');

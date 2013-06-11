@@ -109,7 +109,26 @@ a {
 
 .main { }
 
+.contact-details {
+    background-image: url('../img/kkpohja.png');
+    width: 525px;
+    height: 300px;
+    color: white;
+    font-size: 80%;
+    margin-bottom: 50px;
+}
 
+.contact-details .information {
+    position: relative;
+    top: 87px;
+    left: 280px;
+}
+
+.contact-details h3 {
+    color: #ffff00;
+    margin: 0;
+    text-transform: uppercase;
+}
 
 /* ==========================================================================
    Sidebar
